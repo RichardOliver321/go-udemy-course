@@ -6,4 +6,5 @@ func main() {
 	cards := newDeck()
 
 	fmt.Println(cards.toString())
+	cards.saveToFile("latestDeck")
 }
