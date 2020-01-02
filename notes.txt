@@ -54,6 +54,8 @@ Data Structures
 			- cards[startIndexIncluding : upToButNotIncluding]
 			- cards[0:3] 
 			- you can optionally leave out either number e.g. cards[:3] or cards [10:]
+		- swap positions
+			- d[i], d[newPosition] = d[newPosition], d[i]
 
 iterate
 	- for i, card := range cards {
