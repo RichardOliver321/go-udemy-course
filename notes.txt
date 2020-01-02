@@ -9,5 +9,9 @@ Package
 		- Reusable (Helpers. Reusable logic) 
 			- "Any other name will make reusable"
 			- Makes no executable
+
+Import
+	- fmt (format)
+	- golang.org/pkg (All standart packages)
 		
 
