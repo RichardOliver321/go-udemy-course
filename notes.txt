@@ -72,3 +72,26 @@ Testing
 	- to run "go test"
 	- not many testing frameworks available
 	- test function must start with capital T Test e.g. TestNewDeck
+
+Struct
+	- type person struct {
+		fistName string
+		lastName string
+	  }
+	- bob := person{"bob", "bobby"}
+	- bob := person{firstName: "bob",lastName: "bobby"}
+
+Zero values
+	- string ""
+	- int 0
+	- float 0
+	- bool false
+
+Pointers
+	- *variable (get the value of the variable)
+	- &variable (get the address of a variable)
+	- *type (Used in function, it means it requires a memory address that has a "type" value)
+	- Gotchas
+		- slice[0] = "bob" will update, this is because a slice is a data structure that has a pointer
+					       to an array, so if a copy is made both copies will have a pointer to the same array
+						   - this is called a referance type 
