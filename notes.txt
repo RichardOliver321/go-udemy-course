@@ -66,3 +66,8 @@ types
 	- type bob []string
 		- creates a type called bob, used to extend functionality of, in this case, a slice
 	- See functions - receiver functions as to how to add functionality
+	
+Testing
+	- file must end witn "_test.go"
+	- to run "go test"
+	- not many testing frameworks available
