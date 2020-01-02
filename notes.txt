@@ -22,6 +22,8 @@ Import
 functions
 	- func bobFun()
 	- func bobFunction(bobInput string) string  
+	- Receiver function
+		- func (d deck) print() 
 
 Basic types
 	- bool
