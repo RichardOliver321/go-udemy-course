@@ -19,6 +19,18 @@ func TestNewDeck(t *testing.T) {
 
 }
 
-func TestSaveToDeckAndNewDeckTestFromFile(t *testing.T) {
+func TestSaveToFileAndReadDeckFromFile(t *testing.T) {
+
+	d := newDeck()
+
+	fileName := "_decktesting"
+
+	d.saveToFile(fileName)
+
+	loadedDeck := readDeckFromFile(fileName)
+
+	if len(loadedDeck) != 32 {
+		t.Errorf("Expected length of 32 but got %v", len(loadedDeck))
+	}
 
 }
