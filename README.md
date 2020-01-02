@@ -196,3 +196,39 @@ type Closer interface {
   Close() error
 }
 ```
+
+## Go Routine
+
+```go
+go http.Get("http://google.com")
+```
+
+- Go routines by default use *ONE* CPU core
+- Concurrency is not Parallelism
+  - Concurrency
+    - If one thread blocks another one is picked up
+  - Parallelism
+    - Multiple threads executed at the same time (on separate cores)
+- One main routine, multiple child go routines
+
+## Channels
+
+- Only way to communicate between go routines
+- Mediator for communication
+
+```go
+c := make(chan string)
+
+//Write to the channel
+c <- "input string"
+
+//Read from the channel
+resultString := <-c
+```
+
+```go
+//Iterate over channel
+for l := range c {
+  go checkLink(l, c)
+}
+```
