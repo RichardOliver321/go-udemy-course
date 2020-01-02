@@ -2,7 +2,12 @@ Package
 	- workspace 
 	- related code
 	- Two types
-		- Executable (Runnable files) "package main"
-		- Reusable (Helpers. Reusable logic) "Any other name will make reusable"
+		- Executable (Runnable files) 
+			- Must be called "package main"
+			- Must ALWAYS have "func main" as a function
+			- GO build makes executable
+		- Reusable (Helpers. Reusable logic) 
+			- "Any other name will make reusable"
+			- Makes no executable
 		
 
