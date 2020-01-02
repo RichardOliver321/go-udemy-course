@@ -68,24 +68,42 @@ bob = "bob"
 
 - Array
   - Fixed length of records
+
 - Slice (0 indexed)
   - Can grow and shrink
-  - bobSlice := []string{"bob", "bob2"}
-  - append(cards, "Six of Spades")
-    - Returns a new slice of cards with a new element
-    - Sub section
-      - cards[startIndexIncluding : upToButNotIncluding]
-      - cards[0:3]
-      - you can optionally leave out either number e.g. cards[:3] or cards [10:]
-    - swap positions
-      - d[i], d[newPosition] = d[newPosition], d[i]
+
+```go
+bs := make([]byte, 9999)
+
+cards := []string{"bob", "bob2"}
+//Returns a new slice of cards with a new element
+append(cards, "Six of Spades")
+
+
+//Sub section
+//cards[startIndexIncluding : upToButNotIncluding]
+subsection := cards[0:3]
+//you can optionally leave out either number e.g. cards[:3] or cards [10:]
+
+//swap positions
+cards[i], cards[newPosition] = cards[newPosition], cards[i]
+```
+
 - Map
-  - initialize
-    - colours := map[keyType]valueType{}
-    - colours := make(map[string]string)
-    - modification
-      - colours["blue"] = "#0000ff0"
-      - delete(map, key) -->   delete(colours, "blue")
+  
+```go
+//initialize
+colours := map[keyType]valueType{}
+```
+
+```go
+colours := make(map[string]string)
+
+//modification
+colours["blue"] = "#0000ff0"
+//delete
+delete(colours, "blue")
+```
 
 ## Iterate
 
