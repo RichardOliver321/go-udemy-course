@@ -56,6 +56,13 @@ Data Structures
 			- you can optionally leave out either number e.g. cards[:3] or cards [10:]
 		- swap positions
 			- d[i], d[newPosition] = d[newPosition], d[i]
+	- Map
+		- initialize
+			- colours := map[keyType]valueType{} 
+			- colours := make(map[string]string)
+		- modification
+			- colours["blue"] = "#0000ff0"
+			- delete(map, key) -->   delete(colours, "blue")
 
 iterate
 	- for i, card := range cards {
