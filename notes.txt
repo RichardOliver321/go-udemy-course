@@ -45,11 +45,15 @@ Vars
 Data Structures
 	- Array
 		- Fixed length of records
-	- Slice
+	- Slice (0 indexed)
 		- Can grow and shrink
 		- bobSlice := []string{"bob", "bob2"} 
 		- append(cards, "Six of Spades")
 			- Returns a new slice of cards with a new element
+		- Sub section 
+			- cards[startIndexIncluding : upToButNotIncluding]
+			- cards[0:3] 
+			- you can optionally leave out either number e.g. cards[:3] or cards [10:]
 
 iterate
 	- for i, card := range cards {
