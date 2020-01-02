@@ -1,0 +1,8 @@
+Package
+	- workspace 
+	- related code
+	- Two types
+		- Executable (Runnable files) "package main"
+		- Reusable (Helpers. Reusable logic) "Any other name will make reusable"
+		
+
