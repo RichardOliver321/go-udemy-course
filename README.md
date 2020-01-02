@@ -16,8 +16,10 @@
 
 ## Run
 
-- go run main.go
-- go run main.go deck.go
+```bash
+go run main.go
+go run main.go deck.go
+```
 
 ## Import
 
@@ -26,11 +28,17 @@
 
 ## Functions
 
-- func bobFun()
-- func bobFunction(bobInput string) string  
-- Receiver function
-  - func (d deck) print()
-    - Any variable of type "deck" now gets access to the print method
+```go
+func bobFun() {}
+
+func bobFunction(bobInput string) string {
+  return "Hi there"
+}
+
+//Receiver function
+func (d deck) print() {}
+//Any variable of type "deck" now gets access to the print method
+```
 
 ## Basic types
 
@@ -41,14 +49,20 @@
 
 ## Vars
 
-- var bob string = ""
-- bob := "" (Creating a new var)
-- bob = ""  (Reassigning an existing var)
+```go
+var bob string = "Hi I'm bob string"
+bob := "bobstring" //(Creating a new var)
+bob = "bobstring"  //(Reassigning an existing var)
+```
+
 - Can do this, create and assign separatly:
-  - var bob string
-  - bob = "bob"
-  - This initial creation can be done outside of function scope
-- assigning a variable outside of function scope it NOT possible
+
+```go
+var bob string
+bob = "bob"
+//This initial creation can be done outside of function scope
+//assigning a variable outside of function scope it NOT possible
+```
 
 ## Data Structures
 
