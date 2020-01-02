@@ -24,6 +24,7 @@ functions
 	- func bobFunction(bobInput string) string  
 	- Receiver function
 		- func (d deck) print() 
+			- Any variable of type "deck" now gets access to the print method
 
 Basic types
 	- bool
@@ -58,3 +59,4 @@ iterate
 types
 	- type bob []string
 		- creates a type called bob, used to extend functionality of, in this case, a slice
+	- See functions - receiver functions as to how to add functionality
