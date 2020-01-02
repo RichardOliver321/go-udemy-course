@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	cards := readDeckFromFile("latestDeck")
+	cards := newDeck()
 	cards.shuffle()
 	fmt.Println(cards.toString())
 }
