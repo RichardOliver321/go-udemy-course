@@ -3,8 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	cards := newDeck()
-
+	cards := readDeckFromFile("latestDeck")
 	fmt.Println(cards.toString())
-	cards.saveToFile("latestDeck")
 }
