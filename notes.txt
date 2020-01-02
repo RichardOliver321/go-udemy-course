@@ -14,4 +14,22 @@ Import
 	- fmt (format)
 	- golang.org/pkg (All standart packages)
 		
+functions
+	- func bobFun()
+	- func bobFunction(var bobInput) string  
 
+Basic types
+	- bool
+	- string
+	- int
+	- float64
+
+Vars
+	- var bob string = ""
+	- bob := "" (Creating a new var)
+	- bob = ""  (Reassigning an existing var)
+	- Can do this, create and assign separatly:
+		- var bob string
+		- bob = "bob"
+	- This initial creation can be done outside of function scope
+	- assigning a variable outside of function scope it NOT possible
