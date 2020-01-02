@@ -71,3 +71,4 @@ Testing
 	- file must end witn "_test.go"
 	- to run "go test"
 	- not many testing frameworks available
+	- test function must start with capital T Test e.g. TestNewDeck
