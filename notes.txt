@@ -11,6 +11,10 @@ Package
 			- Makes no executable
 	- Files in the same package can freely call functions defined in other files. WITHOUT import!
 
+Run 
+ - go run main.go
+ - go run main.go deck.go 
+
 Import
 	- fmt (format)
 	- golang.org/pkg (All standart packages)
@@ -48,3 +52,7 @@ iterate
 	- for i, card := range cards {
 		fmt.Println(i, card)
       }
+
+types
+	- type bob []string
+		- creates a type called bob, used to extend functionality of, in this case, a slice
