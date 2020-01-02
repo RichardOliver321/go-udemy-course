@@ -115,9 +115,12 @@ for i, card := range cards {
 
 ## Types
 
-- type bob []string
-  - creates a type called bob, used to extend functionality of, in this case, a slice
-  - See functions - receiver functions as to how to add functionality
+```go
+ type bob []string
+ ```
+
+- creates a type called bob, used to extend functionality of, in this case, a slice
+- See functions - receiver functions as to how to add functionality
 
 ## Testing
 
@@ -164,16 +167,16 @@ type person struct {
 
 ```go
 type chatBot interface {
- getGreeting() string
- }
+   getGreeting() string
+}
  ```
 
 - For anything in the package that has a func callefd getGreeting() that returns a string, then you are also an honorary chatBot
 
 ```go
 func printGreeting(b chatBot) {
- fmt.Println(b.getGreeting())
- }
+  fmt.Println(b.getGreeting())
+}
  ```
 
 - For anything that is of type chatBot you can now call printGreeting  
