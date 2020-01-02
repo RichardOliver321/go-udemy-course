@@ -9,6 +9,7 @@ Package
 		- Reusable (Helpers. Reusable logic) 
 			- "Any other name will make reusable"
 			- Makes no executable
+	- Files in the same package can freely call functions defined in other files. WITHOUT import!
 
 Import
 	- fmt (format)
@@ -16,7 +17,7 @@ Import
 		
 functions
 	- func bobFun()
-	- func bobFunction(var bobInput) string  
+	- func bobFunction(bobInput string) string  
 
 Basic types
 	- bool
@@ -33,3 +34,17 @@ Vars
 		- bob = "bob"
 	- This initial creation can be done outside of function scope
 	- assigning a variable outside of function scope it NOT possible
+
+Data Structures
+	- Array
+		- Fixed length of records
+	- Slice
+		- Can grow and shrink
+		- bobSlice := []string{"bob", "bob2"} 
+		- append(cards, "Six of Spades")
+			- Returns a new slice of cards with a new element
+
+iterate
+	- for i, card := range cards {
+		fmt.Println(i, card)
+      }
